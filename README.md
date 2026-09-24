@@ -103,7 +103,7 @@ http://IP/agenda/
 | `direccion`      | VARCHAR(150)  | Opcional                   |
 | `fecha_registro` | TIMESTAMP     | Se asigna automáticamente  |
 
-## Conceptos que se practican
+## Conceptos de examen
 
 - Conexión a MySQL con **PDO**
 - **Consultas preparadas** para evitar inyección SQL
@@ -111,6 +111,13 @@ http://IP/agenda/
 - Validación de formularios en el servidor
 - Patrón **POST / Redirect / GET** después de guardar
 - Reutilizar código con `require` (encabezado, pie y formulario)
+
+## Para revision.
+
+1. Pestaña donde se visualice el VCN
+2. Pestaña donde se prueba la aplicacion
+3. Pestaña de GitHub Personal con el proyecto ya modificado
+4. Visual Studio Code Abierto donde se modifico y publico el proyecto.
 
 
 ## Nota
