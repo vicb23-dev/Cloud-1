@@ -1,0 +1,90 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f4f7;
+    color: #333;
+}
+
+header { background: #2c3e50; padding: 15px 20px; }
+header h1 { margin: 0; font-size: 1.5em; }
+header a { color: #fff; text-decoration: none; }
+
+main {
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+}
+
+footer { text-align: center; color: #888; font-size: .9em; padding: 10px; }
+
+/* Botones */
+.btn {
+    display: inline-block;
+    padding: 8px 14px;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: .95em;
+    cursor: pointer;
+}
+.btn:hover { background: #2980b9; }
+.btn.secundario { background: #95a5a6; }
+.btn.secundario:hover { background: #7f8c8d; }
+.btn.peligro { background: #e74c3c; }
+.btn.peligro:hover { background: #c0392b; }
+.btn.pequeno { padding: 5px 10px; font-size: .85em; }
+
+/* Barra de búsqueda */
+.barra {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.buscador { display: flex; gap: 6px; flex: 1; }
+.buscador input { flex: 1; max-width: 350px; }
+
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    width: 100%;
+}
+
+/* Tabla */
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 10px; border-bottom: 1px solid #e1e4e8; text-align: left; }
+th { background: #ecf0f1; }
+tr:hover td { background: #f9fbfc; }
+td.acciones { display: flex; gap: 6px; }
+td.acciones form { margin: 0; }
+
+.total, .vacio { color: #666; }
+
+/* Formulario */
+.formulario { display: grid; gap: 14px; max-width: 500px; }
+.formulario label { display: grid; gap: 4px; font-weight: bold; }
+.formulario .acciones { display: flex; gap: 10px; }
+
+/* Mensajes */
+.alerta { padding: 12px; border-radius: 4px; margin-bottom: 15px; }
+.alerta ul { margin: 0; padding-left: 20px; }
+.exito { background: #d4edda; color: #155724; }
+.error { background: #f8d7da; color: #721c24; }
+
+/* Pantallas pequeñas */
+@media (max-width: 700px) {
+    table, thead, tbody, tr, th, td { display: block; }
+    thead { display: none; }
+    tr { border: 1px solid #e1e4e8; margin-bottom: 10px; border-radius: 4px; }
+    td { border: none; }
+}
